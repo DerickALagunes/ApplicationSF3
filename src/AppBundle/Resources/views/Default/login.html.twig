@@ -1,0 +1,15 @@
+{# empty Twig template #}
+{% if last_user %}
+    Error el usuario {{last_user}} es incorrecto
+{% endif %}
+
+<a href="{{path('user_register')}}">Registrar usuario</a>
+
+<form action="{{path('login_check')}}" method="POST">
+    <label>Correo Ellectrónico</label>
+    <input type="email" id="username" name="_username" value="{{last_user}}" />
+    <label>Contraseña</label>
+    <input type="password" id="password" name="_password"/>
+    <input type="submit" value="Iniciar sesión" />
+    <input type="hidden" name="_target_path" value="/dashboard" />
+</form>

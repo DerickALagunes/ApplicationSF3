@@ -1,0 +1,16 @@
+{# empty Twig template #}
+
+<p>Bienvenido {{app.user.email}}</p>
+<a href="{{path('logout')}}">Cerrar Sesión</a>
+
+{% for user in users %}
+    <p>{{user.name}} {{user.email}} </p> <a href="#{{nzoEncrypt(user.id)}}">modificar</a>    
+{% endfor %}
+
+{{ knp_pagination_render(users) }}
+
+{% if is_granted('ROLE_USER') %}
+    {{ dump(app.user)}}
+    <p>eres user</p>
+{% endif %}
+

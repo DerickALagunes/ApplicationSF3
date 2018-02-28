@@ -1,0 +1,13 @@
+## YAML Template.
+---
+app_user:
+    resource: "@AppBundle/Resources/config/routing/user.yml"
+    prefix: /
+    
+app_task:
+    resource: "@AppBundle/Resources/config/routing/task.yml"
+    prefix: /
+    
+app_homepage:
+    path: /
+    defaults: { _controller: AppBundle:User:login }
