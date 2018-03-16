@@ -1,10 +1,10 @@
-BackendBundle\Entity\Tasks:
+BackendBundle\Entity\Task:
     type: entity
-    table: tasks
+    table: task
     indexes:
-        fk_tasks_users:
+        fk_task_users:
             columns:
-                - user_id
+                - user
     id:
         id:
             type: integer
@@ -43,13 +43,13 @@ BackendBundle\Entity\Tasks:
             column: updated_at
     manyToOne:
         user:
-            targetEntity: Users
+            targetEntity: User
             cascade: {  }
             fetch: LAZY
             mappedBy: null
             inversedBy: null
             joinColumns:
-                user_id:
+                user:
                     referencedColumnName: id
             orphanRemoval: false
     lifecycleCallbacks: {  }

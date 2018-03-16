@@ -5,9 +5,9 @@ namespace BackendBundle\Entity;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * Users
+ * User
  */
-class Users implements UserInterface, \Serializable {
+class User implements UserInterface, \Serializable {
 
     /**
      * @var integer
@@ -58,7 +58,7 @@ class Users implements UserInterface, \Serializable {
      *
      * @param string $role
      *
-     * @return Users
+     * @return User
      */
     public function setRole($role) {
         $this->role = $role;
@@ -80,7 +80,7 @@ class Users implements UserInterface, \Serializable {
      *
      * @param string $name
      *
-     * @return Users
+     * @return User
      */
     public function setName($name) {
         $this->name = $name;
@@ -102,7 +102,7 @@ class Users implements UserInterface, \Serializable {
      *
      * @param string $surname
      *
-     * @return Users
+     * @return User
      */
     public function setSurname($surname) {
         $this->surname = $surname;
@@ -124,7 +124,7 @@ class Users implements UserInterface, \Serializable {
      *
      * @param string $email
      *
-     * @return Users
+     * @return User
      */
     public function setEmail($email) {
         $this->email = $email;
@@ -146,7 +146,7 @@ class Users implements UserInterface, \Serializable {
      *
      * @param string $password
      *
-     * @return Users
+     * @return User
      */
     public function setPassword($password) {
         $this->password = $password;
@@ -168,7 +168,7 @@ class Users implements UserInterface, \Serializable {
      *
      * @param \DateTime $createdAt
      *
-     * @return Users
+     * @return User
      */
     public function setCreatedAt($createdAt) {
         $this->createdAt = $createdAt;

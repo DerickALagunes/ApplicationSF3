@@ -1,6 +1,6 @@
-BackendBundle\Entity\Users:
+BackendBundle\Entity\User:
     type: entity
-    table: users
+    table: user
     id:
         id:
             type: integer

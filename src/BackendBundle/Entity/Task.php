@@ -3,9 +3,9 @@
 namespace BackendBundle\Entity;
 
 /**
- * Tasks
+ * Task
  */
-class Tasks
+class Task
 {
     /**
      * @var integer
@@ -58,7 +58,7 @@ class Tasks
      *
      * @param string $title
      *
-     * @return Tasks
+     * @return Task
      */
     public function setTitle($title)
     {
@@ -82,7 +82,7 @@ class Tasks
      *
      * @param string $description
      *
-     * @return Tasks
+     * @return Task
      */
     public function setDescription($description)
     {
@@ -106,7 +106,7 @@ class Tasks
      *
      * @param string $status
      *
-     * @return Tasks
+     * @return Task
      */
     public function setStatus($status)
     {
@@ -130,7 +130,7 @@ class Tasks
      *
      * @param \DateTime $createdAt
      *
-     * @return Tasks
+     * @return Task
      */
     public function setCreatedAt($createdAt)
     {
@@ -154,7 +154,7 @@ class Tasks
      *
      * @param \DateTime $updatedAt
      *
-     * @return Tasks
+     * @return Task
      */
     public function setUpdatedAt($updatedAt)
     {
@@ -178,7 +178,7 @@ class Tasks
      *
      * @param \BackendBundle\Entity\Users $user
      *
-     * @return Tasks
+     * @return Task
      */
     public function setUser(\BackendBundle\Entity\Users $user = null)
     {

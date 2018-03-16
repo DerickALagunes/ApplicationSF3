@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'SensioLabs\\Security' => array($vendorDir . '/sensiolabs/security-checker'),
+    'SensioLabs\\AnsiConverter' => array($vendorDir . '/sensiolabs/ansi-to-html'),
     'Nzo\\UrlEncryptorBundle' => array($vendorDir . '/nzo/url-encryptor-bundle'),
     'Knp\\Component' => array($vendorDir . '/knplabs/knp-components/src'),
     'Doctrine\\ORM\\' => array($vendorDir . '/doctrine/orm/lib'),

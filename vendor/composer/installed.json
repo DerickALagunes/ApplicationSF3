@@ -1777,6 +1777,52 @@
         "description": "This bundle generates code for you"
     },
     {
+        "name": "sensiolabs/ansi-to-html",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sensiolabs/ansi-to-html.git",
+            "reference": "8b5d787dca714bd98dd770c078d76528320a8286"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sensiolabs/ansi-to-html/zipball/8b5d787dca714bd98dd770c078d76528320a8286",
+            "reference": "8b5d787dca714bd98dd770c078d76528320a8286",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "suggest": {
+            "twig/twig": "Provides nice templating features"
+        },
+        "time": "2017-05-02T00:53:29+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "SensioLabs\\AnsiConverter": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "A library to convert a text with ANSI codes to HTML"
+    },
+    {
         "name": "sensiolabs/security-checker",
         "version": "v4.1.7",
         "version_normalized": "4.1.7.0",

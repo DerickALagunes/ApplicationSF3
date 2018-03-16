@@ -239,6 +239,10 @@ class ComposerStaticInitd4849226115abda7ab30f774b9a062bd
             array (
                 0 => __DIR__ . '/..' . '/sensiolabs/security-checker',
             ),
+            'SensioLabs\\AnsiConverter' => 
+            array (
+                0 => __DIR__ . '/..' . '/sensiolabs/ansi-to-html',
+            ),
         ),
         'N' => 
         array (

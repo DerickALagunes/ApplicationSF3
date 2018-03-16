@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7a03f013c5f4a4d65fa3fa84800c5fb",
+    "content-hash": "77e0f96fbe97707f3e21dfeffe796529",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1674,6 +1674,50 @@
             "time": "2017-12-14T19:03:23+00:00"
         },
         {
+            "name": "sensiolabs/ansi-to-html",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sensiolabs/ansi-to-html.git",
+                "reference": "8b5d787dca714bd98dd770c078d76528320a8286"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sensiolabs/ansi-to-html/zipball/8b5d787dca714bd98dd770c078d76528320a8286",
+                "reference": "8b5d787dca714bd98dd770c078d76528320a8286",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "twig/twig": "Provides nice templating features"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "SensioLabs\\AnsiConverter": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "A library to convert a text with ANSI codes to HTML",
+            "time": "2017-05-02T00:53:29+00:00"
+        },
+        {
             "name": "sensiolabs/security-checker",
             "version": "v4.1.7",
             "source": {
@@ -2578,7 +2622,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "nzo/url-encryptor-bundle": 20
+        "nzo/url-encryptor-bundle": 20,
+        "sensiolabs/ansi-to-html": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
